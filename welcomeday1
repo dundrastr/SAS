@@ -16,3 +16,7 @@ run;
  proc means data= day1;
  var a b c d;
  run;
+
+proc gchart data=helloworld stderr;
+hbar3d a b c d;
+run;
