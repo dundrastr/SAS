@@ -1,0 +1,18 @@
+data day1;
+input  a b c d;
+cards;
+1 2 3 4
+11 22 33 44
+111 222 333 444
+1111 2222 3333 4444
+;
+run;
+
+
+ proc print data= day1;
+ run;
+ 
+ 
+ proc means data= day1;
+ var a b c d;
+ run;
